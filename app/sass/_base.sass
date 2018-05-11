@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900')
+$color_btn : #e04c60
+$color_h2 : #a36f52
+$color_bg : #ffebe0
 
-$color_yellow : #ffcc00
-$color_text_main : #666666
-$color_h2_h3 : #333333
-$color_dop_main : #620a08
+$fonts_Lato-Light : 'LatoLight', sans-serif
+$fonts_Lato-LightItalic : 'LatoLightItalic', sans-serif
+$fonts_Lato-Semibold : 'LatoSemibold', sans-serif
+$fonts_Lato-Regular : 'LatoRegular', sans-serif
+$fonts_Lato-Thin : 'LatoThin', sans-serif
+$fonts_Lato-Medium : 'LatoMedium', sans-serif
+$fonts_Back : 'Back', sans-serif
 
 body
-  max-width: 1440px
   position: relative
-  font-size: 1em
+  font-size: 16px
   margin: 0 auto
-  color: $color_text_main
-  font-family: 'Roboto', sans-serif
+  color: #000
+  font-family: $fonts_Lato-Regular
+  max-width: 1920px
+  overflow-x: hidden
 
 .v-center
   position: absolute
@@ -20,25 +26,88 @@ body
   transform: translate(-50%, -50%)
 
 .container
-  max-width: 1024px
-  padding: 0 12px
+  max-width: 1230px
+  padding: 0 30px
   width: 100%
   box-sizing: border-box
   margin: 0 auto
 
-.h3,
-.h1
-  color: $color_h2_h3
-  text-transform: uppercase
-  text-align: center
-.h2
-  font-size: 3em
-  text-transform: uppercase
-  text-align: center
-  color: $color_h2_h3
-  font-weight: 900
+input
+  border: none
+  border-bottom: 1px solid #262321
+  background-color: transparent
+  padding: 5px 0
+  outline: none
 
-.bg-grey
-  background-color: #f7f3f2
+.h1
+  color: #010101
+  font-size: 57px
+  line-height: 73px
+  font-family: $fonts_Back
+.h2
+  font-family: $fonts_Back
+  font-size: 40px
+  text-align: center
+  color: $color_h2
+
+.dop-title
+  p
+    font-size: 24px
+    line-height: 32px
+    font-family: $fonts_Lato-Regular
+
+.btn-more
+  color: #f5e9ea
+  font-size: 18px
+  background-color: $color_btn
+  border-radius: 30px
+  padding: 18px 45px
+  line-height: 54px
+  box-shadow: 0px 5px 18px rgba(160, 8, 28, 0.2)
+
+.btn-sub
+  color: #f5e9ea
+  font-size: 16px
+  background-color: $color_btn
+  border: none
+  border-radius: 30px
+  padding: 11px 38px
+  cursor: pointer
+  margin-left: 50px
+  box-shadow: 0px 5px 18px rgba(160, 8, 28, 0.2)
+
+.btn-sign
+  color: #f5e9ea
+  font-size: 18px
+  background-color: $color_btn
+  border: none
+  border-radius: 30px
+  padding: 11px 38px
+  cursor: pointer
+  margin-top: 35px
+  box-shadow: 0px 5px 18px rgba(160, 8, 28, 0.2)
+
+.btn-call
+  color: #f5e9ea
+  font-size: 18px
+  background-color: $color_btn
+  border: none
+  border-radius: 30px
+  padding: 21px 65px
+  cursor: pointer
+  margin-left: 70px
+  margin-right: 15px
+  line-height: 60px
+  box-shadow: 0px 5px 18px rgba(160, 8, 28, 0.2)
+
+.bg-pink
+  background-color: $color_bg
+
 .hidden
   display: none
+
+img
+  display: block
+
+footer
+  padding: 40px 0

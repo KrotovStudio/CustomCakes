@@ -1,0 +1,56 @@
+header
+  background-color: #ffdecc
+.header
+  .container
+    height: 100%
+  &.header-bg-main
+    background-image: url("../img/bg_header_main.jpg")
+    background-color: $color_bg
+    background-size: cover
+    background-position: center
+    height: 698px
+  &__dopnav
+    display: flex
+    align-items: center
+    .espanol
+      padding-left: 50px
+    p,a
+      color: #ffffff
+  &__topline
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 8px 0
+  &__nav
+    padding-right: 50px
+    ul
+      width: 500px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      li.current-menu-item
+        a
+          font-family: $fonts_Lato-Semibold
+          box-sizing: border-box
+      a
+        color: #000000
+        font-family: $fonts_Lato-Light
+        box-sizing: border-box
+        &.active,
+        &:hover
+          font-family: $fonts_Lato-Semibold
+          box-sizing: border-box
+  &__main
+    max-width: 470px
+    width: 100%
+    display: flex
+    align-items: center
+    height: 80%
+    p
+      font-family: $fonts_Lato-Light
+      font-size: 18px
+      line-height: 27px
+      padding: 25px 0 30px
+    &-block
+      padding-left: 13px
+
