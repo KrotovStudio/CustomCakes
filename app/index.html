@@ -10,6 +10,8 @@
     <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="X-UA-Compatible" content="IE=edge">-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="libs/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
@@ -32,7 +34,7 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="">About us</a></li>
+                        <li><a href="about.html">About us</a></li>
                         <li><a href="">Gallery</a></li>
                         <li><a href="">Menu</a></li>
                         <li><a href="">Blog</a></li>
@@ -107,41 +109,93 @@
         </div>
 
         <div class="our-slider-wrap">
-            <div class="our-slider" style="display: flex;">
-                <div class="our-slider-block">
-                    <div class="our-slider-block-img" style="background-image: url('img/ourslider/img-1.jpg')"></div>
-                    <div class="our-slider-block-txt">
-                        <h3>Wedding Custom Cake</h3>
-                        <p>Delicious moist vanilla almond cake accompany by homemade whipped almond buttercream</p>
-                    </div>
+            <div class="our-slider" id="our-slider">
+                <div class="our-slider-block ">
+                    <a class="image-popup" href="img/ourslider/img-1.jpg">
+                        <img style="display: none;" src="" alt="">
+                        <div class="our-slider-block-img" style="background-image: url('img/ourslider/img-1.jpg')"></div>
+                        <div class="our-slider-block-txt">
+                            <h3>Wedding Custom Cake</h3>
+                            <p>Delicious moist vanilla almond cake accompany by homemade whipped almond buttercream</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="our-slider-block">
-                    <div class="our-slider-block-img" style="background-image: url('img/ourslider/img-2.jpg')"></div>
-                    <div class="our-slider-block-txt">
-                        <h3>Wedding Custom Cake</h3>
-                        <p>Delicious moist vanilla almond cake accompany by homemade whipped almond buttercream</p>
-                    </div>
+                    <a class="image-popup" href="img/ourslider/img-2.jpg">
+                        <img style="display: none;" src="" alt="">
+                        <div class="our-slider-block-img" style="background-image: url('img/ourslider/img-2.jpg')"></div>
+                        <div class="our-slider-block-txt">
+                            <h3>Wedding Custom Cake</h3>
+                            <p>Delicious moist vanilla almond cake accompany by homemade whipped almond buttercream</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="our-slider-block">
-                    <div class="our-slider-block-img" style="background-image: url('img/ourslider/img-3.jpg')"></div>
-                    <div class="our-slider-block-txt">
-                        <h3>Wedding Custom Cake</h3>
-                        <p>Delicious moist vanilla almond cake accompany by homemade whipped almond buttercream</p>
-                    </div>
+                    <a class="image-popup" href="img/ourslider/img-3.jpg">
+                        <img style="display: none;" src="" alt="">
+                        <div class="our-slider-block-img" style="background-image: url('img/ourslider/img-3.jpg')"></div>
+                        <div class="our-slider-block-txt">
+                            <h3>Wedding Custom Cake</h3>
+                            <p>Delicious moist vanilla almond cake accompany by homemade whipped almond buttercream</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="our-slider-block">
-                    <div class="our-slider-block-img" style="background-image: url('img/ourslider/img-4.jpg')"></div>
-                    <div class="our-slider-block-txt">
-                        <h3>Wedding Custom Cake</h3>
-                        <p>Delicious moist vanilla almond cake accompany by homemade whipped almond buttercream</p>
-                    </div>
+                    <a class="image-popup" href="img/ourslider/img-4.jpg">
+                        <img style="display: none;" src="" alt="">
+                        <div class="our-slider-block-img" style="background-image: url('img/ourslider/img-4.jpg')"></div>
+                        <div class="our-slider-block-txt">
+                            <h3>Wedding Custom Cake</h3>
+                            <p>Delicious moist vanilla almond cake accompany by homemade whipped almond buttercream</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="our-slider-block">
-                    <div class="our-slider-block-img" style="background-image: url('img/ourslider/img-5.jpg')"></div>
-                    <div class="our-slider-block-txt">
-                        <h3>Wedding Custom Cake</h3>
-                        <p>Delicious moist vanilla almond cake accompany by homemade whipped almond buttercream</p>
-                    </div>
+                    <a class="image-popup" href="img/ourslider/img-5.jpg">
+                        <img style="display: none;" src="" alt="">
+                        <div class="our-slider-block-img" style="background-image: url('img/ourslider/img-5.jpg')"></div>
+                        <div class="our-slider-block-txt">
+                            <h3>Wedding Custom Cake</h3>
+                            <p>Delicious moist vanilla almond cake accompany by homemade whipped almond buttercream</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="our-slider-block">
+                    <a class="image-popup" href="img/ourslider/img-2.jpg">
+                        <img style="display: none;" src="" alt="">
+                        <div class="our-slider-block-img" style="background-image: url('img/ourslider/img-2.jpg')"></div>
+                        <div class="our-slider-block-txt">
+                            <h3>Wedding Custom Cake</h3>
+                            <p>Delicious moist vanilla almond cake accompany by homemade whipped almond buttercream</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="our-slider-block">
+                    <a class="image-popup" href="img/ourslider/img-3.jpg">
+                        <img style="display: none;" src="" alt="">
+                        <div class="our-slider-block-img" style="background-image: url('img/ourslider/img-3.jpg')"></div>
+                        <div class="our-slider-block-txt">
+                            <h3>Wedding Custom Cake</h3>
+                            <p>Delicious moist vanilla almond cake accompany by homemade whipped almond buttercream</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="our-slider-block">
+                    <a class="image-popup" href="img/ourslider/img-4.jpg">
+                        <img style="display: none;" src="" alt="">
+                        <div class="our-slider-block-img" style="background-image: url('img/ourslider/img-4.jpg')"></div>
+                        <div class="our-slider-block-txt">
+                            <h3>Wedding Custom Cake</h3>
+                            <p>Delicious moist vanilla almond cake accompany by homemade whipped almond buttercream</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container arrows">
+                <div class="arrow-slider">
+                    <div class="arrow our-prev"></div>
+                    <div class="arrow our-next"></div>
                 </div>
             </div>
         </div>
@@ -239,7 +293,24 @@
 
             <!-- Slider REViews-->
             <div class="reviews-wrap">
-                <div class="reviews-wrap-slider">
+                <div class="reviews-wrap-slider" id="rev-slider">
+
+                    <!-- #-->
+                    <div class="slider-block">
+                        <div class="slider-block-img" style="background-image: url('img/review_bg.png')"></div>
+                        <div class="slider-block-txt">
+                            <div class="user-about">
+                                <p class="name">SELENA MARIE</p>
+                                <p class="date">April 15, 2018</p>
+                            </div>
+
+                            <div class="user-review">
+                                <p>Every part of my experience was amazing! When we met I had a few ideas in mind but she definitely helped piece everything together for me, down to all the delicious flavors! Speaking of flavors, I have yet to have had a cake like the one that was made for me!</p>
+                                <p>A beautifully red velvet moist cake with cream cheese icing and nutella filling cake like I've never tasted before! There is no other way to go when it comes to your cake, from the inside out these cakes are perfect! No way to go wrong with Custom Cakes!</p>
+                                <p>Thank you again!</p>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- #-->
                     <div class="slider-block">
@@ -348,6 +419,7 @@
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
 <script src="libs/smooth-div-scroll/js/jquery-ui-1.8.23.custom.min.js"></script>
 <script src="libs/smooth-div-scroll/js/jquery.mousewheel.min.js"></script>
 <script src="libs/smooth-div-scroll/js/jquery.kinetic.js"></script>

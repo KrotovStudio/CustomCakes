@@ -16,6 +16,20 @@ header
       padding-left: 50px
     p,a
       color: #ffffff
+    .phone
+      p
+        padding-left: 30px
+        position: relative
+        &:before
+          content: ''
+          background-image: url("../img/phone_icon_headerMenu.png")
+          width: 18px
+          height: 18px
+          background-position: center
+          position: absolute
+          left: 0
+        a
+          margin-right: 10px
   &__topline
     display: flex
     align-items: center
@@ -53,4 +67,25 @@ header
       padding: 25px 0 30px
     &-block
       padding-left: 13px
+      
+.header
+  &.another-page
+    a
+      color: #fff
+    h1
+      color: #fefeff
+      font-size: 60px
+      text-align: center
+    .header__main
+      max-width: 100%
+      justify-content: center
+      height: 70%
+  &.header-bg
+    &-about
+      background-image: url("../img/about_us_bg.png")
+      background-color: #fff
+      background-size: cover
+      background-position: center
+      height: 763px
+
 

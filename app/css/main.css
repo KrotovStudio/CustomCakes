@@ -210,6 +210,25 @@ header {
   color: #ffffff;
 }
 
+.header__dopnav .phone p {
+  padding-left: 30px;
+  position: relative;
+}
+
+.header__dopnav .phone p:before {
+  content: '';
+  background-image: url("../img/phone_icon_headerMenu.png");
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  position: absolute;
+  left: 0;
+}
+
+.header__dopnav .phone p a {
+  margin-right: 10px;
+}
+
 .header__topline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,6 +301,32 @@ header {
   padding-left: 13px;
 }
 
+.header.another-page a {
+  color: #fff;
+}
+
+.header.another-page h1 {
+  color: #fefeff;
+  font-size: 60px;
+  text-align: center;
+}
+
+.header.another-page .header__main {
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 70%;
+}
+
+.header.header-bg-about {
+  background-image: url("../img/about_us_bg.png");
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  height: 763px;
+}
+
 /* main css start */
 .who {
   padding: 80px 0;
@@ -328,8 +373,61 @@ header {
   padding-top: 20px;
 }
 
+.our-prev {
+  background-image: url("../img/icon_arrow_left_rev.png");
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+
+.our-next {
+  background-image: url("../img/icon_arrow_right_rev.png");
+  background-position: 20px center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+
+.our .arrows {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 48%;
+  padding: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.our .arrow {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+}
+
+.our .arrow-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 .our-slider-wrap {
   padding: 57px 0 70px;
+  position: relative;
+}
+
+.our-slider-wrap:hover .arrows {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .our-slider-block {
@@ -717,3 +815,125 @@ header {
 }
 
 /* main css end */
+.blocks-descr {
+  padding: 110px 0;
+}
+
+.blocks-descr-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.blocks-descr-wrap > div {
+  width: 49%;
+}
+
+.blocks-descr-img img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.blocks-descr-txt {
+  max-width: 460px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+
+.blocks-descr-txt p {
+  font-family: "LatoLight", sans-serif;
+  line-height: 23px;
+  padding-bottom: 14px;
+}
+
+.blocks-descr-txt p:last-child {
+  padding-bottom: 0;
+}
+
+.whatwe {
+  padding: 100px 0;
+  background-image: url("../img/what_we_do_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.whatwe h2 {
+  color: #fefefe;
+}
+
+.whatwe-wrap {
+  padding-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.whatwe-wrap-block {
+  width: 25%;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.whatwe-wrap-block img {
+  margin: 0 auto;
+}
+
+.whatwe-wrap-block p {
+  padding-top: 30px;
+  line-height: 22px;
+  text-align: center;
+  color: #fefefe;
+}
+
+.advantages {
+  padding-top: 110px;
+}
+
+.advantages-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 35px 0;
+}
+
+.advantages-wrap-block {
+  width: 23%;
+  padding: 36px 20px;
+}
+
+.advantages-wrap-block img {
+  margin: 0 auto;
+}
+
+.advantages-wrap-block h3 {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0 15px;
+}
+
+.advantages-wrap-block p {
+  text-align: center;
+  font-size: 16px;
+  font-family: "LatoLight", sans-serif;
+  color: #010101;
+  line-height: 23px;
+}

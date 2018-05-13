@@ -33,9 +33,42 @@
 
 .our
   padding-top: 20px
+  &-prev
+    background-image: url("../img/icon_arrow_left_rev.png")
+    background-position: 15px center
+    background-repeat: no-repeat
+    background-size: 30%
+  &-next
+    background-image: url("../img/icon_arrow_right_rev.png")
+    background-position: 20px center
+    background-repeat: no-repeat
+    background-size: 30%
+  .arrows
+    position: absolute
+    margin: 0 auto
+    width: 100%
+    left: 0
+    right: 0
+    top: 48%
+    padding: 0
+    opacity: 0
+    transition: 0.3s
+  .arrow
+    cursor: pointer
+    border-radius: 50%
+    background-color: #fff
+    width: 50px
+    height: 50px
+    &-slider
+      display: flex
+      justify-content: space-between
   &-slider
     &-wrap
       padding: 57px 0 70px
+      position: relative
+      &:hover .arrows
+        opacity: 1
+        transition: 0.3s
     &-block
       width: 370px
       max-height: 486px
@@ -300,7 +333,10 @@
         width: 19px
         height: 19px
         display: inline-block
+
 /* main css end */
+
+@import "about"
 
 @import "footer"
 
