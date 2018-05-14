@@ -1,0 +1,43 @@
+.gallery-wrap
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  padding-top: 80px
+  &-block
+    width: 31%
+    height: 366px
+    border-radius: 5px
+    margin: 20px 0
+    background-position: center
+    overflow: hidden
+    a
+      display: block
+      height: inherit
+      transition: 0.3s
+      position: relative
+      &:hover
+        background-color: rgba(242, 70, 110, 0.57)
+        transition: 0.3s
+        &:before
+          content: ''
+          background-image: url("../img/loop.png")
+          width: 52px
+          height: 51px
+          position: absolute
+          left: 50%
+          top: 50%
+          transform: translate(-50%, -50%)
+
+.view-more
+  text-align: center
+  padding-top: 30px
+  p
+    color: #4c8ae0
+    border-bottom: 1px solid #4c8ae0
+    text-align: center
+    font-size: 18px
+    display: inline-block
+    cursor: pointer
+    margin: 0 auto
+    &:hover
+      border-bottom: 1px solid transparent

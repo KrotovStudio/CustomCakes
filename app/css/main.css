@@ -335,6 +335,14 @@ header {
   height: 763px;
 }
 
+.header.header-bg-gallery {
+  background-image: url("../img/gallery_bg.png");
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  height: 763px;
+}
+
 /* main css start */
 .who {
   padding: 80px 0;
@@ -1050,4 +1058,73 @@ header {
 
 .block-descr-txt-contacts .phone .soc span {
   line-height: 1;
+}
+
+.gallery-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 80px;
+}
+
+.gallery-wrap-block {
+  width: 31%;
+  height: 366px;
+  border-radius: 5px;
+  margin: 20px 0;
+  background-position: center;
+  overflow: hidden;
+}
+
+.gallery-wrap-block a {
+  display: block;
+  height: inherit;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+.gallery-wrap-block a:hover {
+  background-color: rgba(242, 70, 110, 0.57);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.gallery-wrap-block a:hover:before {
+  content: '';
+  background-image: url("../img/loop.png");
+  width: 52px;
+  height: 51px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.view-more {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.view-more p {
+  color: #4c8ae0;
+  border-bottom: 1px solid #4c8ae0;
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.view-more p:hover {
+  border-bottom: 1px solid transparent;
 }

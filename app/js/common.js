@@ -59,7 +59,6 @@ $(document).ready(function() {
     });
 });
 
-
 //    slick slider
 $('#rev-slider').slick({
     infinite: true,
@@ -98,3 +97,8 @@ $('#our-slider').slick({
     ]
 });
 
+/* open */
+$('.view-more p').on('click',function(){
+   $(this).hide();
+    $('.gallery-wrap-block').removeClass('hidden')
+});
