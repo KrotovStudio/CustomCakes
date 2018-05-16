@@ -1,7 +1,26 @@
 .menu
   padding-top: 80px
+  position: relative
+  &:before
+    content: ''
+    background-image: url("../img/menu_img_left.png")
+    width: 238px
+    height: 134px
+    position: absolute
+    left: 0
+    top: 30%
+  &:after
+    content: ''
+    background-image: url("../img/menu_img_right.png")
+    width: 249px
+    height: 210px
+    position: absolute
+    right: 0
+    bottom: 0
   &-wrap
     display: flex
+    position: relative
+    z-index: 2
     &-list
       > div
         width: 352px
@@ -12,6 +31,7 @@
         align-items: center
         justify-content: center
         position: relative
+        background-color: #fff
         &:nth-child(odd)
           background-color: #f9ece8
         p

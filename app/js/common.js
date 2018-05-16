@@ -97,8 +97,19 @@ $('#our-slider').slick({
     ]
 });
 
+/* menu-wrap */
+$('.num').click(function() {
+    var click_id=$(this).attr('id');
+    if (click_id != $('.num.active').attr('id') ) {
+        $('.num').removeClass('active');
+        $(this).addClass('active');
+        $('.menu-wrap-menu > div').removeClass('active');
+        $('#con_' + click_id).addClass('active');
+    }
+});
+
 /* open */
 $('.view-more p').on('click',function(){
    $(this).hide();
-    $('.gallery-wrap-block').removeClass('hidden')
+    $('.gallery-wrap-block').removeClass('hidden');
 });

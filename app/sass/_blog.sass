@@ -1,0 +1,97 @@
+.blog
+  padding: 110px 0 40px
+  position: relative
+  &:before
+    content: ''
+    background-image: url("../img/img_left.png")
+    width: 238px
+    height: 134px
+    position: absolute
+    left: 0
+    top: 30%
+  &:after
+    content: ''
+    background-image: url("../img/img_right.png")
+    width: 249px
+    height: 210px
+    position: absolute
+    right: 0
+    bottom: 0
+  &-wrap
+    display: flex
+    position: relative
+    justify-content: space-between
+    z-index: 2
+    &-last-news
+      max-width: 511px
+      width: 100%
+      img
+        max-width: 100%
+        border-radius: 5px
+      .last-news-block
+        margin-bottom: 50px
+        &:last-child
+          margin-bottom: 0
+        &-txt
+          padding-top: 25px
+          p
+            font-size: 16px
+            line-height: 23px
+            font-family: $fonts_Lato-Light
+          .date
+            color: #000
+            font-size: 14px
+            font-family: $fonts_Lato-LightItalic
+          .h3
+            color: #000
+            font-size: 20px
+            font-family: $fonts_Lato-Regular
+            padding: 15px 0 20px
+        &-about
+          p
+            padding-bottom: 20px
+          .link-read
+            text-decoration: underline
+            &:hover
+              text-decoration: none
+    &-sidebar
+      padding-left: 20px
+      .sidebar-block
+        display: flex
+        padding-bottom: 40px
+        width: 600px
+        &:last-child
+          padding-bottom: 0
+        &-img
+          min-width: 270px
+          width: 100%
+          height: 177px
+          box-sizing: border-box
+          border-radius: 5px
+          img
+            max-width: 100%
+            height: 100%
+        &-txt
+          padding-left: 30px
+          p
+            font-size: 16px
+            line-height: 23px
+            font-family: $fonts_Lato-Light
+          .date
+            color: #000
+            font-size: 14px
+            font-family: $fonts_Lato-LightItalic
+          .h3
+            color: #000
+            font-size: 17px
+            font-family: $fonts_Lato-Regular
+            padding: 5px 0 15px
+        &-about
+          p
+            font-size: 15px
+            line-height: 22px
+            padding-bottom: 13px
+          .link-read
+            text-decoration: underline
+            &:hover
+              text-decoration: none
