@@ -1,13 +1,3 @@
-/* smooth-scrolling */
-$(document).ready(function () {
-    $("#makeMeScrollable").smoothDivScroll({
-        mousewheelScrolling: "allDirections",
-        manualContinuousScrolling: true,
-        autoScrollingMode: "onStart"
-    });
-});
-
-
 /* image popup */
 $('.image-popup').magnificPopup({
     type: 'image',
@@ -48,14 +38,12 @@ $(document).ready(function() {
 
 /* close / open mobile menu */
 $(document).ready(function() {
-    var menu =  $('.nav-main');
-    $('.mob-btn').on('click', function(){
-        menu.addClass('active')
+    $('.open-menu').on('click', function(){
+        $('.header__nav').show();
     });
 
-    var close = $('.close-nav');
-    $(close).on('click', function(){
-        menu.removeClass('active')
+    $('.close-menu').on('click', function(){
+        $('.header__nav').hide();
     });
 });
 
@@ -77,20 +65,26 @@ $('#our-slider').slick({
     nextArrow: $('.our-next'),
     responsive: [
         {
-            breakpoint: 768,
+            breakpoint: 1400,
             settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
+                slidesToShow: 4
+            }
+        },
+        {
+            breakpoint: 1100,
+            settings: {
                 slidesToShow: 3
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 900,
             settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
                 slidesToShow: 1
             }
         }
@@ -112,4 +106,44 @@ $('.num').click(function() {
 $('.view-more p').on('click',function(){
    $(this).hide();
     $('.gallery-wrap-block').removeClass('hidden');
+});
+
+/* form */
+//  E-mail Ajax Send
+$("form").submit(function() { //Change
+
+    var th = $(this);
+    $.ajax({
+        type: "POST",
+        url: "/mail.php", //Change
+        data: th.serialize()
+    }).success(function() {
+
+        alert('Thanks');
+        $.magnificPopup.open({
+            items: {
+                src: '.modal-thanks'
+            }
+        });
+
+        setTimeout(function () {
+            $.magnificPopup.close();
+        }, 3000);
+        th.trigger("reset");
+
+    }).error(function(){
+        alert('Error');
+        $.magnificPopup.open({
+            items: {
+                src: '.modal-error'
+            }
+        });
+
+        setTimeout(function () {
+            $.magnificPopup.close();
+        }, 3000);
+
+    });
+    return false;
+
 });

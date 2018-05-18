@@ -273,7 +273,7 @@ header {
 }
 
 .header__nav ul a.active, .header__nav ul a:hover {
-  font-family: "LatoSemibold", sans-serif;
+  font-weight: bold;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -360,6 +360,22 @@ header {
 }
 
 /* main css start */
+.mob-btn {
+  display: none;
+}
+
+.mobile_main_vis {
+  display: none;
+}
+
+.logo-mob {
+  display: none;
+}
+
+.close-menu {
+  display: none;
+}
+
 .who {
   padding: 80px 0;
 }
@@ -523,7 +539,7 @@ header {
 .subscribe:before {
   content: '';
   background-image: url("../img/img_before.png");
-  width: 214px;
+  width: 202px;
   height: 121px;
   position: absolute;
   left: 0px;
@@ -534,7 +550,7 @@ header {
   content: '';
   background-image: url("../img/img_after.png");
   width: 247px;
-  height: 155px;
+  height: 148px;
   position: absolute;
   right: 0px;
   top: 9%;
@@ -558,6 +574,8 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 
 .subscribe .dop-title {
@@ -601,6 +619,9 @@ header {
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  z-index: 1;
 }
 
 .howwe-text p {
@@ -920,7 +941,7 @@ header {
 
 .whatwe-wrap-block img {
   margin: 0 auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 .whatwe-wrap-block p {
@@ -1074,6 +1095,52 @@ header {
 
 .block-descr-txt-contacts .phone .soc span {
   line-height: 1;
+}
+
+.popup-form {
+  max-width: 470px;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 36px 50px 46px;
+  border-radius: 5px;
+}
+
+.popup-form p {
+  color: #010101;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.popup-form form {
+  padding-top: 30px;
+}
+
+.popup-form form input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.popup-form form textarea {
+  max-width: 369px;
+  height: 166px;
+  border: 1px solid #262321;
+  resize: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.popup-form form span {
+  font: 400 13.3333px Arial;
+  display: block;
+  padding: 5px 0;
+}
+
+.popup-form form input[type='submit'] {
+  width: auto;
+  margin-bottom: 0;
 }
 
 .gallery-wrap {

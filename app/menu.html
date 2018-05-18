@@ -30,15 +30,16 @@
             </div>
 
             <!-- Desctop NAV-->
-            <div class="header__nav nav-main">
+            <div class="header__nav">
+                <img class="close-menu" src="img/close.png" alt="">
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Gallery</a></li>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact us</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacts.html">Contact us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -83,6 +84,7 @@
 
             <!-- Desctop NAV-->
             <div class="header__nav">
+                <img class="close-menu" src="img/close.png" alt="">
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -104,6 +106,11 @@
                     <a href="espanol.html">Hablamos Español!</a>
                 </div>
             </div>
+
+            <!-- Mobile btn Menu-->
+            <div class="mob-btn">
+                <img class="open-menu" src="img/menu.png" alt="">
+            </div>
         </div>
 
         <!-- Header Main-->
@@ -111,7 +118,6 @@
             <div class="header__main-block">
                 <h1 class="h1">Menu</h1>
             </div>
-
         </div>
 
     </div>
@@ -267,7 +273,7 @@
                     <h3>LET US MAKE IT SWEET!</h3>
                 </div>
                 <div class="btn">
-                    <a class="btn-call" href="#">Call Us</a>
+                    <a class="btn-call" href="tel:+14076835065">Call Us</a>
                 </div>
             </div>
 
@@ -312,18 +318,21 @@
 <!--ORDER NOW POPUP-->
 <div id="popup-form" class="modal-form popup-wrap popup-message white-popup-block mfp-hide">
     <div class="popup-form">
-        <h2>Order</h2>
-        <p>Leave your details and our managers will contact you</p>
+        <p>
+            If you have any questions about our delicious
+            custom cakes just send us your message
+        </p>
 
-        <form>
-            <span>Name</span>
-            <input type="text" required>
-            <span>Phone number</span>
-            <input type="tel" required>
-
-            <div class="btn">
-                <input class="btn-submit" type="submit" value="Submit">
-            </div>
+        <form class="sign">
+            <label>
+                <input type="text" name="name" placeholder="Your name" required="required">
+            </label>
+            <label>
+                <input type="email" name="email" placeholder="Enter your e-mail" required="required">
+            </label>
+            <span>Message</span>
+            <textarea name="message"></textarea>
+            <input class="btn-sign" type="submit" value="Send">
         </form>
     </div>
 </div>
@@ -342,10 +351,6 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="libs/slick/slick.min.js"></script>
-<script src="libs/smooth-div-scroll/js/jquery-ui-1.8.23.custom.min.js"></script>
-<script src="libs/smooth-div-scroll/js/jquery.mousewheel.min.js"></script>
-<script src="libs/smooth-div-scroll/js/jquery.kinetic.js"></script>
-<script src="libs/smooth-div-scroll/js/jquery.smoothdivscroll-1.3-min.js"></script>
 <script src="libs/magnific-popup/dist/jquery.magnific-popup.js"></script>
 <script src="js/common.js"></script>
 

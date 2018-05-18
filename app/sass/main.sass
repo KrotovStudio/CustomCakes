@@ -5,6 +5,15 @@
 @import "header"
 
 /* main css start */
+.mob-btn
+  display: none
+.mobile_main_vis
+  display: none
+.logo-mob
+  display: none
+.close-menu
+  display: none
+
 .who
   padding: 80px 0
   &-img
@@ -113,7 +122,7 @@
   &:before
     content: ''
     background-image: url("../img/img_before.png")
-    width: 214px
+    width: 202px
     height: 121px
     position: absolute
     left: 0px
@@ -122,7 +131,7 @@
     content: ''
     background-image: url("../img/img_after.png")
     width: 247px
-    height: 155px
+    height: 148px
     position: absolute
     right: 0px
     top: 9%
@@ -135,6 +144,8 @@
     display: flex
     align-items: center
     justify-content: space-between
+    position: relative
+    z-index: 1
   .dop-title
     width: 235px
     min-width: 235px
@@ -163,6 +174,9 @@
     padding-right: 20px
     width: 100%
     box-sizing: border-box
+    background-color: rgba(255, 255, 255, 0.6)
+    position: relative
+    z-index: 1
     p
       line-height: 25px
       padding-bottom: 10px
